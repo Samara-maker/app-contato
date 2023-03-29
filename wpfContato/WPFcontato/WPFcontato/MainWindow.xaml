@@ -1,0 +1,48 @@
+﻿<Window x:Class="WPFcontato.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPFcontato"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid RenderTransformOrigin="0.5,0.5">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="227*"/>
+            <RowDefinition Height="194*"/>
+            <RowDefinition Height="13*"/>
+        </Grid.RowDefinitions>
+        <Grid.RenderTransform>
+            <TransformGroup>
+                <ScaleTransform/>
+                <SkewTransform/>
+                <RotateTransform Angle="-0.244"/>
+                <TranslateTransform/>
+            </TransformGroup>
+        </Grid.RenderTransform>
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="Black"/>
+                <GradientStop Color="#FF9CED8C" Offset="0.498"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="6*"/>
+            <ColumnDefinition Width="189*"/>
+            <ColumnDefinition Width="5*"/>
+        </Grid.ColumnDefinitions>
+        <Button x:Name="btcadastrar" Grid.Column="1" Content="CADASTRAR" HorizontalAlignment="Left" Margin="280,166,0,0" VerticalAlignment="Top" Height="51" Width="186" FontWeight="Bold" FontSize="18" Click="btcadastrar_Click"/>
+        <Button x:Name="btListar" Grid.Column="1" Content="LISTAR CONTATO" HorizontalAlignment="Left" VerticalAlignment="Top" Height="51" Width="186" Margin="280,37,0,0" FontWeight="Bold" FontSize="18" Grid.Row="1" Click="btListar_Click_1"/>
+        <Label Grid.Column="1" Content="CADASTRO DE CONTATO" HorizontalAlignment="Center" Margin="0,45,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" Width="368" Height="53" FontSize="30" Cursor="Help" FontWeight="Bold">
+            <Label.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="0.074"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Label.RenderTransform>
+        </Label>
+
+    </Grid>
+</Window>
